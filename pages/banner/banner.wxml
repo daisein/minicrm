@@ -1,0 +1,23 @@
+<!--pages/main/main.wxml-->
+
+<view class="banner" style="background-image: url('https://images.pexels.com/photos/220326/pexels-photo-220326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+  <view class="banner-content">
+      
+  <view class="h3"> Used College Textbooks</view>
+    <form class="h1 first-line">
+    <text class="new-line-2">Save your money: 同学购
+</text>
+    <view>
+    </view>
+      <view class="btncontainer">
+      <button bindtap="buy" form-type="submit">Buy</button>
+      <button bindtap="sell" class="redbtn"form-type="submit">Sell</button>
+    </view>
+    </form>
+      <view class="bar">
+
+      <input confirm-type="search" bindconfirm="search" class="searchbar" placeholder="e.g.   MATH 1050"></input>
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,95 @@
+<view class='title'>
+ <view class='h1'>
+   Swagtastic UI Stat Pop out
+ </view>
+
+</view>
+<view class='ui'>
+ <view class='ui_box'>
+   <view class='ui_box__inner'>
+     <view class='h2'>
+       Conversion Rate
+     </view>
+     <view class='p'>Lorem ipsum dolor sit amet</view>
+     <view class='stat'>
+       <span>58%</span>
+     </view>
+     <view class='progress'>
+       <view class='progress_bar'></view>
+     </view>
+     <view class='p'>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</view>
+   </view>
+   <view class='drop'>
+     <view class='p'>Take a closer look</view>
+     <view class='arrow'></view>
+   </view>
+ </view>
+</view>
+
+
+<view class='title'>
+</view>
+
+<view class='ui'>
+  <view class='ui_box'>
+    <view class='ui_box__inner'>
+      <view class='h2'>
+        Sales By Type
+      </view>
+      <view class='p'>Lorem ipsum dolor sit amet</view>
+      <view class='stat_left'>
+        <view class='ul'>
+          <view class='li'>
+            Electical
+          </view>
+          <view class='li'>
+            Clothing
+          </view>
+          <view class='li'>
+            Entertainment
+          </view>
+          <view class='li'>
+            Kitchen
+          </view>
+        </view>
+      </view>
+      <view class='progress_graph'>
+        <view class='progress_graph__bar--1'></view>
+        <view class='progress_graph__bar--2'></view>
+        <view class='progress_graph__bar--3'></view>
+        <view class='progress_graph__bar--4'></view>
+      </view>
+      <view class='p'>Lorem ipsum dolor sit amet. Some more super groovy information.</view>
+    </view>
+    <view class='drop'>
+      <view class='p'>Take a closer look</view>
+      <view class='arrow'></view>
+    </view>
+  </view>
+</view>
+
+<view class='title'>
+</view>
+<view class='ui'>
+ <view class='ui_box'>
+   <view class='ui_box__inner'>
+     <view class='h2'>
+       Total Sales
+     </view>
+     <view class='p'>Lorem ipsum dolor sit amet</view>
+     <view class='stat'>
+       <span>$34,403.93</span>
+     </view>
+     <view class='progress'>
+       <view class='progress_bar--two'></view>
+     </view>
+     <view class='p'>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</view>
+   </view>
+   <view class='drop'>
+     <view class='p'>Take a closer look</view>
+     <view class='arrow'></view>
+   </view>
+ </view>
+</view>
+
+

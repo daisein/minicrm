@@ -1,0 +1,50 @@
+<!-- <modal id="modal" hidden="{{hiddenmodalput}}" title="User Information" confirm-text="confirm" cancel-text="cancel" bindcancel="cancel" bindconfirm="confirm">
+        <form bindtap='Submit'>
+          <input bindinput="wechatId" name="wechatId" type='text' placeholder="wechatid:" auto-focus/>
+          <input bindinput="email" name="email" type='email' placeholder="email:" auto-focus/>
+          <input bindinput="university" type='text' placeholder="ucniversity" auto-focus/>
+        </form>
+      </modal> -->
+<view style="background-color: #eee; height: 100vh;">
+    <view style="background-color: #fff; width: 89%; height: 35vh; margin: 0 auto 10px auto; padding: 10px; 0 10px 30rpx;">
+        <view style="display: flex; justify-content: center; margin-top: 5vh !important;">
+      <image src="{{avatarUrl}}" alt="Image Failed" style="width: 128px; height: 128px; border-radius: 50%; margin: 0 auto;"></image>
+        </view>
+    </view>
+      <view class="nav-display" style="background-color: #fff; padding: 10px 0 10px 30rpx; width: 90% !important; margin: 0 auto">
+
+        <view class="navbox" bindtap="linkPurchase">
+          <image class="navimg" src="{{icon[0].navimg}}" style="width: 32px; height: 32px;"></image>
+          <text class="navtext" style="font-size: 14px; font-weight: bold; color: grey; left: -15px">{{icon[0].navtext}}</text>
+        </view>
+        <view class="navbox" bindtap="linkSell">
+          <image class="navimg" src="{{icon[1].navimg}}" style="width: 32px; height: 32px;"></image>
+          <text class="navtext" style="font-size: 14px; font-weight: bold; color: grey; left: -5px;">{{icon[1].navtext}}</text>
+        </view>
+        <view class="navbox" bindtap="linkTransact">
+          <image class="navimg" src="{{icon[2].navimg}}" style="width: 32px; height: 32px;"></image>
+          <text class="navtext" style="font-size: 14px; font-weight: bold; color: grey; left: -10px">{{icon[2].navtext}}</text>
+        </view>
+</view>
+
+      <view class="form">
+      <view class="line">
+        <text decode="{{true}}" space="{{true}}">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <text style="display: inline; font-size: 14px;">{{userinfo.email}}</text>
+        <text style="float: right; opacity: 0.5; font-weight: bolder;">></text>
+      </view>
+      <view class="line">
+        <text decode="{{true}}" space="{{true}}">Wechat_id:&nbsp;</text>
+        <text style="display: inline; font-size: 14px;">{{userinfo.wechat_id}}</text>
+        <text style="float: right; opacity: 0.5; font-weight: bolder;">></text>
+      </view>
+      <view class="line">
+        <text decode="{{true}}" space="{{true}}">University:&nbsp;&nbsp;</text>
+        <text style="display: inline; font-size: 14px;">{{userinfo.university}}</text>
+        <text style="float: right; opacity: 0.5; font-weight: bolder;">></text>
+      </view>
+      <view>
+        <button class="edit" bindtap="modalinput">Edit Info</button>
+      </view>
+      </view>
+</view>

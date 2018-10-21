@@ -1,0 +1,76 @@
+
+/* pages/browse/browse.wxss */
+.slide-image {
+  width: 100vw;
+}
+
+.ba {
+  
+}
+.post {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(100,100,100,0.2);
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px 3px rgba(20,20,20,0.2);
+  margin: 60px auto;
+  padding: 0 20rpx;
+  min-height: 20vh;
+  background-color:white;
+}
+.post-body {
+margin:0 30px 0 30px;
+padding-bottom:18px;
+text-align:left;
+min-width:190px;
+padding:10px;
+}
+.book-cover {
+min-width:94px;
+height:117px;
+position:relative;
+top:-20rpx;
+left:0rpx;
+opacity:0.9;
+box-shadow:0 10px 8px 0 gray;
+margin:51rpx;
+
+}
+.title {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.condition {
+  font-size: 12px;
+  font-weight: lighter;
+  display: block;
+}
+.status {
+  font-size: 10px;
+  font-weight: bold;
+  color: orange;
+  opacity: 0.8;
+}
+.price {
+  font-size: 18px;
+  display: block;
+  font-weight: bolder;
+  color: green;
+  margin-top: 6px;
+}
+
+
+
+.background {
+  padding-top: 2vh;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.post-info {
+position:relative;
+top:-80px;
+left:241px;
+
+}

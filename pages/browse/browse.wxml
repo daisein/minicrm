@@ -1,0 +1,35 @@
+<!--pages/browse/browse.wxml-->
+<button bindtap='onClickscore'>Score</button>
+<button bindtap='onClickstage'>Stage</button>
+
+
+<view class="ba">
+<view class="background">
+<view wx:for="{{customers}}" wx:for-item="customer" class="customer" bindtap='onClick' data-customer="{{customer}}">
+<view class="book-cover">
+
+
+<view class="post-body">
+  <text class="title">{{customer.name}}</text>
+      <text class="condition">Rating: {{customer.rating}}</text>
+      <text class="condition">{{customer.intended_product}}</text>
+      <text class="condition">{{customer.potential_value}}</text>
+        
+
+
+</view>
+<view class="post-info">
+  <text class="status">{{customer.stage}}</text>
+  <text class="price">{{customer.score}}</text>
+</view>
+</view>
+</view>
+</view>
+</view>
+
+
+
+<view wx:if="{{ posts.length === 0 }}">
+ <text style="font-size: 16px; color: grey;">Sorry we cannot find the book you are requesting.</text>
+ <image src="/images/sad.png" style="width: 50px; height: 50px; display: block; margin: 0 auto;"></image>
+</view>

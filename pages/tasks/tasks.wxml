@@ -1,0 +1,45 @@
+<!--pages/tasks/tasks.wxml-->
+<text>Memo + Celcius</text>
+
+<view class="incomplete">
+<text class="red-card">今日目标</text>
+<text>\n</text>
+<view class="entry">
+  <text class="checkbox">正</text>
+  <text class="task-description">1. 高分客户Winfield Fan的Stage现在是Prospect，今天努力让Winfeld进入到Initiao Offer!\n</text>
+</view>
+<text>\n</text>
+<view class="entry">
+  <text class="checkbox">正</text>
+
+  <text class="task-description">2. 高分客户Calvin Cheung的Stage现在是Negotiation，今天努力让Calvin进入到Order!\n</text>
+</view>
+
+<text>\n</text>
+<view>查看所有任务</view>
+</view>
+
+
+<text>\n</text>
+
+<text>\n</text>
+
+<view class="incomplete">
+<text class="green-card">已完成</text>
+<text>\n</text>
+<view class="entry">
+   <image class=" checkmark" src="/images/check-square-regular.svg"/>
+  <text class="task-description">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit!\n</text>
+</view>
+<text>\n</text>
+<view class="entry">
+   <image class=" checkmark" src="/images/check-square-regular.svg"/>
+
+  <text class="task-description">2. 高分客户Calvin Cheung的Stage现在是Negotiation，今天努力让Calvin进入到Order!\n</text>
+</view>
+
+<text>\n</text>
+<view>查看已完成任务</view>
+</view>
+
+

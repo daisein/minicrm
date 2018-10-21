@@ -1,0 +1,117 @@
+<!--index.wxml-->
+<view class="finance" bindtap='onClick2'>
+  <view class="sales-number">
+    <view class="small-sales">本月销售额</view>
+    <view class="big-sales">13,0000元</view>
+  </view>
+  <view class="sales-number">
+    <view class="small-sales">本月订单</view>
+    <view class="big-sales">5个</view>
+  </view>
+</view>
+
+
+<view class="s-box" bindtap='onClick2'>
+  <view class="speedometr">
+    <view class="scale low"></view>
+    <view class="scale middle"></view>
+    <view class="scale hight"></view>
+    <view id="arrow" class="arrow" style="transform: rotate({{deg}}deg)"></view>
+</view>  
+
+  <view id="counter" class="counter">本月业绩已达{{deg}}%</view>
+  
+  <input id="testParam" type="range" min="0" max="100"></input>
+</view>
+
+
+
+<!-- <view class="login-container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view> -->
+
+<!-- <view class="title">我的高分客户</view> -->
+<view wx:for="{{topcustomers}}" wx:for-item='topcustomer' data-post='{{topcustomer}}'>
+<view class="message">
+  <image class="avatar-large" src="https://kitt.lewagon.com/placeholder/users/gabriel-dehan" />
+  <view class="message-name">
+    <view class='h3'>{{topcustomer.name}}</view>
+    <view class='p'>10/07/17</view>
+  </view>
+  <view class="message-body">
+    <view class='p'></view>
+    <view class='p'>
+      目标订单：{{topcustomer.potential_value}}元
+    </view>
+  </view>
+  <view class="message-status">
+    <view class ='p' class="status accepted">Pending</view>
+    <view class= 'p' class="price">{{topcustomer.score}}</view>
+  </view>
+  </view>
+</view>
+
+<button bindtap='onClick'>查看所有客户</button>
+
+<!-- 
+
+任务：
+1. 把Avatar换成另外一种表达方式（如： 100-90，钻石；80 - 90 黄金； 70 - 80 白银； 60 - 70 青铜）
+2. addcolumnto customer api 每个customer都有自己的avartar
+3.   还要加一个上次联系过的属性 这个只算很久没有联系的客户
+4. 100分的需要取消 -->
+
+
+
+
+
+
+
+
+
+<!-- 
+<view class="task-card"  bindtap='onClick'>
+    <text>我的高分客户:\n</text> -->
+        <!-- <text>1. {{customers[0].name}} {{customers[0].score}}分\n</text> -->
+        <!-- 100分的需要取消 -->
+        <!-- <text>2. {{customers[1].name}} {{customers[1].score}}分\n</text>
+        <text>3. {{customers[2].name}} {{customers[2].score}}分\n</text>
+        <text>4. {{customers[3].name}} {{customers[3].score}}分\n</text>
+        <text>4. {{customers[4].name}} {{customers[4].score}}分\n</text>
+</view> -->
+
+<!-- 1.把所有的customer按score排列，push到一个新的集合里面 2.显示集合的前三个客户 -->
+<!-- 
+<view>
+   <image class="pipeline" src="/images/pipeline.png"/>
+
+    <text class="prospect">新顾客: {{pros.length}}\n</text>
+        <text class="prospect"> \n</text>
+        <text class="prospect"> \n</text>
+
+    <text class="prospect">已报价: {{init.length}}\n</text>
+        <text class="prospect"> \n</text>
+
+    <text class="prospect">谈判中: {{nego.length}}\n</text>
+        <text class="prospect"> \n</text>
+
+    <text class="prospect">订单: {{orde.length}}\n</text>
+</view>
+
+
+<view wx:for="{{customers}}" wx:for-item="customer" class="customer" bindtap='onClick' data-post="{{customer}}">
+</view>
+
+
+<view style='background-image'>
+  <text class="prospect">\n</text>
+</view>
+ -->
+
+

@@ -1,0 +1,64 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx18d4593fb20c8c9e",
+	"projectname": "Minicrm",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "Browse",
+					"pathName": "pages/browse/browse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tasks",
+					"pathName": "pages/tasks/tasks",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "finance",
+					"pathName": "pages/finance/finance",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "banner",
+					"pathName": "pages/banner/banner"
+				}
+			]
+		}
+	}
+}
