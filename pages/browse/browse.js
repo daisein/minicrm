@@ -47,8 +47,6 @@ Page({
             console.log(customers[i].name,score);
           };
 
-
-
           if (score < 100000) {
             score = (score - 100000) / 100000 * 10 + 70
           };
@@ -64,7 +62,44 @@ Page({
           if (score >= 400000) {
             score = 100
           };
+          console.log ("yoleo", score)
 
+          var image;
+          if (score <= 100 && score >= 90) {
+            image = "/images/first.svg"
+          };
+          if (score < 90 && score >= 80) {
+            image = "/images/second.svg"
+          };
+          if (score < 80 && score >= 70) {
+            image = "/images/third.svg"
+          };
+          if (score < 70 && score >= 0) {
+            image = "/images/fourth.svg"
+          };
+          console.log("image", image)
+
+
+          // var i;
+          // var image;
+          // for (i = 0; i < customers.length; i++) {
+          //   if (customers[i].score <= 100 && customers[i].score >= 90) {
+          //     image = "/images/first.svg"
+          //     console.log(customers[i].name, image);
+          //   };
+          //   if (customers[i].score < 90 && customers[i].score >= 80) {
+          //     image = "/images/second.svg"
+          //     console.log(customers[i].name, image);
+          //   };
+          //   if (customers[i].score < 80 && customers[i].score >= 70) {
+          //     image = "/images/third.svg"
+          //     console.log(customers[i].name, image);
+          //   };
+          //   if (customers[i].score < 70 && customers[i].score >= 0) {
+          //     image = "/images/fourth.svg"
+          //     console.log(customers[i].name, image);
+          //   };
+          // };
 
 
           let id = customers[i].id;
@@ -75,9 +110,8 @@ Page({
           let wechat = customers[i].wechat;
           let stage = customers[i].stage;
           let user = customers[i].user;
+          let image = image;
           let score = score
-
-
 
           let customer = {
             id: id,
@@ -88,21 +122,23 @@ Page({
             wechat: wechat,
             stage: stage,
             user: user,
+            image: image,
             score: score
           }
-
+          console.log(123456, customer)
 
           // Update api data
           wx.request({
             url: `http://localhost:3000/api/v1/customers/${customers[i].id}`,
-            method: 'put',
+            method: 'PUT',
             data: { customer },
             success: function (pos) {
-              console.log(1234, score)
               // set data on index page and show
 
             }
           })
+
+
 
 
 

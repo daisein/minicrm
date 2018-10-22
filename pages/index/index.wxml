@@ -39,7 +39,7 @@
 <!-- <view class="title">我的高分客户</view> -->
 <view wx:for="{{topcustomers}}" wx:for-item='topcustomer' data-post='{{topcustomer}}'>
 <view class="message">
-  <image class="avatar-large" src="https://kitt.lewagon.com/placeholder/users/gabriel-dehan" />
+  <image class="avatar-large" src="{{topcustomer.image}}" />
   <view class="message-name">
     <view class='h3'>{{topcustomer.name}}</view>
     <view class='p'>10/07/17</view>
